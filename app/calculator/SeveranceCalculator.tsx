@@ -282,43 +282,6 @@ export default function SeveranceCalculator() {
           </div>
         </div>
       </section>
-
-      {/* JSON-LD FAQ schema — helps this page qualify for FAQ rich results */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "ทดลองงานถูกเลิกจ้าง ได้ค่าชดเชยไหม",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "ถ้าทำงานมาแล้วไม่ถึง 120 วัน นายจ้างไม่ต้องจ่ายค่าชดเชย แต่ถ้าเกิน 120 วันแล้ว แม้ยังทดลองงานก็เข้าเกณฑ์ได้รับค่าชดเชยตามอายุงาน",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "ลาออกเอง ได้ค่าชดเชยหรือเปล่า",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "ไม่ได้ ค่าชดเชยตามมาตรา 118 มีไว้สำหรับกรณีนายจ้างเป็นฝ่ายเลิกจ้างเท่านั้น",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "ค่าชดเชยเลิกจ้าง ต้องเสียภาษีไหม",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "เงินชดเชยตามกฎหมายแรงงานมีสิทธิได้รับยกเว้นภาษีบางส่วนตามเงื่อนไขที่กรมสรรพากรกำหนด ควรตรวจสอบอัตรายกเว้นปัจจุบันก่อนยื่นภาษี",
-                },
-              },
-            ],
-          }),
-        }}
-      />
     </main>
   );
 }
