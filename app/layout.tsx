@@ -3,5 +3,5 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 const geistSans=Geist({variable:"--font-geist-sans",subsets:["latin"]});
 const geistMono=Geist_Mono({variable:"--font-geist-mono",subsets:["latin"]});
-export const metadata:Metadata={title:"คำนวณค่าชดเชยเลิกจ้าง",description:"เครื่องมือคำนวณค่าชดเชยเลิกจ้าง"};
+export const metadata:Metadata={title:"คำนวณค่าชดเชยเลิกจ้าง",description:"เครื่องมือคำนวณค่าชดเชยเลิกจ้าง",verification:{google:"gxXpCb-UnuRa55AC6JONEa6IuvdjNvUQ4n_MoIXF3Uk"}};
 export default function RootLayout({children}:LayoutProps<"/">){return <html lang="th" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}><body className="min-h-full flex flex-col">{children}</body></html>;}
